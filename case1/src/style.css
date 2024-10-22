@@ -1,0 +1,159 @@
+
+
+@media screen and (min-width: 650px) {
+  body {
+     
+   background-color: #E1EFEF;
+   display:flex;
+   justify-content: center;
+   align-items:center;
+   height:100vh;
+   margin:0;
+   padding:0;
+
+    
+       
+      
+       
+    }
+ 
+ 
+    .container {
+     background-image: url("resim.png");
+     background-size:cover;
+     background-color: #cccccc; /* Resim yüklenmezse arka plan rengi */
+     height: 600px;
+     width: 1000px;
+     background-repeat: no-repeat; 
+     background-size: cover; /* Resmin konteyneri kaplamasını sağlar */
+     margin: 0;  
+     padding: 0;
+     border-radius: 20px;
+     
+ }
+     .split-screen{
+         height: 100vh;
+         width: 100%;
+         position: fixed;
+         z-index: 1;
+         top: 0;
+         overflow-x: hidden;
+        
+       }
+   
+   
+       .split-right-screen-login-form {
+         position: absolute; /* Konumlandırmayı değiştirir */
+         top: 50%; /* Dikeyde ortalar */
+         left: 50%; /* Yatayda ortalar */
+         transform: translate(-50%, -50%); /* Tam ortalamak için kaydırır */
+         
+         height: 600px; /* Belirtilen yükseklik */
+         width: 500px; /* Belirtilen genişlik */
+         background-color: #FFFFFF; /* Arka plan rengi */
+         border-radius: 20px; /* Kenarları yuvarlar */
+        
+     }
+ 
+   
+   }
+ 
+ 
+ 
+   
+   .centered {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: left;
+   }
+
+   .login-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight:400;
+   }
+   hr.solid{
+     margin-bottom:-10px;
+    
+     
+   }
+ 
+ 
+ input[type=text], select {
+     width: 100%;
+     padding: 12px 20px;
+     margin-top:16px;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+    
+   }
+ .login-button {
+     width: 100%;
+     margin-top:16px;
+     background-color:#32ABB5;
+     height:42px;
+     border-radius: 4px;
+     border: none;
+     outline:none;
+     color: #FFFFFF;
+     text-transform: uppercase;
+     font-size:15px;
+     font-weight: 500;
+    line-height: 26px;
+     font-family: 'Roboto';
+    
+   }
+
+ 
+ @media screen and (max-width: 600px){
+ 
+.container{
+  justify-content: center;
+
+}
+   html, body {
+     background-color: #E1EFEF;
+     margin: 0;
+     padding: 0;
+     width: 100vw;  
+     height: 100vh; 
+     overflow: hidden;
+ }
+ 
+ .login-form {
+  
+   border-radius: 20px;
+   width: 80%;
+   background-color:#FFFFFF ;
+   height: max-content;
+   padding: 20px; /* Dış boşluklar */
+   
+ 
+ }
+ 
+ 
+ .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:90%
+}
+
+ 
+ .split-right-screen-login-form{
+   width: 100%;
+ 
+
+
+ }
+ 
+ } 
+ 
+ 
+ 
+ 
+   
